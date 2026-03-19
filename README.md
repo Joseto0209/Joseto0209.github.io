@@ -1,7 +1,7 @@
 # Joseto0209.github.io
 
-Personal webpage for Lab 1 — PDP, Universidad de los Andes.
+Pagina personal — Lab1 Web technologies.
 
-## Published Site URL
+## Site URL
 
 You can view the site here: [https://joseto0209.github.io](https://joseto0209.github.io)
