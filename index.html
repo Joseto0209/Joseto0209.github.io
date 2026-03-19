@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Tomás — Pagina personal</title>
+    <meta name="description"
+        content="Personal webpage of José Tomás, a university student at Universidad de los Andes, Chile.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <img src="profile.png" alt="Foto de perfil">
+            <h1>José Tomás Arévalo</h1>
+            <p class="subtitle">Estudiante de Ingeniería Civil Industrial · Universidad de los Andes</p>
+            <p class="subtitle">Desde 2021</p>
+            <a href="https://github.com/Joseto0209" target="_blank" class="github-link">GitHub Profile</a>
+        </header>
+
+        <!-- About Me -->
+        <section class="section">
+            <h2>About Me</h2>
+            <p>
+                Soy José Tomás, estudiante de Ingeniería Civil Industrial en la Universidad de los Andes.
+                Me apasiona el deporte, el emprendimiento, la innovación y la tecnología.
+                Me gusta ver peliculas y series, Boxear, hacer running y leer libros fomes sobre ventas, emprendimiento
+                y finanzas.
+                mi deporte favorito es el esqui que me ha permitido conocer lugares increibles.
+            </p>
+        </section>
+
+        <!-- Personal Details -->
+        <section class="section">
+            <h2>Detalles Personales</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="label">Nombre</div>
+                    <div class="value">José Tomás Arévalo</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Carrera</div>
+                    <div class="value">Ingeniería Civil Industrial - Mencion en Finanzas</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Año de Ingreso</div>
+                    <div class="value">2021</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Universidad</div>
+                    <div class="value">Universidad de los Andes</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section">
+            <h2>Skills</h2>
+            <table class="skills-table">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td><span class="badge badge-basic">Medio</span></td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td><span class="badge badge-basic">Medio</span></td>
+                    </tr>
+                    <tr>
+                        <td>HTML / CSS</td>
+                        <td><span class="badge badge-basic">Medio</span></td>
+                    </tr>
+                    <tr>
+                        <td>Excel</td>
+                        <td><span class="badge badge-advance">Avanzado</span></td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td><span class="badge badge-basic">Medio</span></td>
+                    </tr>
+                    <tr>
+                        <td>Arena</td>
+                        <td><span class="badge badge-basic">Medio</span></td>
+                    </tr>
+                    <tr>
+                        <td>Lovable</td>
+                        <td><span class="badge badge-basic">Medio</span></td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td><span class="badge badge-advance">Avanzado</span></td>
+                    </tr>
+                    <tr>
+                        <td>Spanish</td>
+                        <td><span class="badge badge-native">Nativo</span></td>
+                    </tr>
+                    <tr>
+                        <td>Aleman</td>
+                        <td><span class="badge badge-basic">Basico</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Hobbies -->
+        <section class="section">
+            <h2>Hobbies &amp; Interests</h2>
+            <div class="interests">
+                <span class="tag">💻 Programación</span>
+                <span class="tag">📚 Reading</span>
+                <span class="tag">🏋️ Fitness</span>
+                <span class="tag">🎵 Music</span>
+                <span class="tag">🌍 Viajar</span>
+                <span class="tag">🥊 Boxeo</span>
+                <span class="tag">🎬 Movies</span>
+            </div>
+        </section>
+
+        <!-- Que nuevo estoy aprendiendo -->
+        <section class="section">
+            <h2>Que nuevo estoy haciendo</h2>
+            <p>
+                Comence a leer un libro sobre el manejo de las finanzas ya que estoy empesando un emprendimiento
+                relacionado a ello y es muy bueno. les dejo el link para que vean el libro si les interesa comprarlo
+                <a href="https://www.buscalibre.cl/libro-the-psychology-of-money-timeless-lessons-on-wealth-greed-and-happiness/9780857197689/p/52918726?srsltid=AfmBOoqiBmmID-WJiGCnpDOyygZxQ4aCEtsfvnRwu-R2W4fGMFdEflsX"
+                    target="_blank" class="external-link">The psychology of money</a>
+            </p>
+        </section>
+
+        <!-- Interactive Section -->
+        <section class="section">
+            <h2>Deja un mensaje sobre que te parecio el sitio y si tienes algo en comun que te parezca conversar</h2>
+            <p>escribir algo y presionar el boton para que aparezca debajo!</p>
+            <div class="interactive-form">
+                <input type="text" id="userInput" placeholder="Escribe algo aqui...">
+                <button id="updateButton" onclick="updateDisplay()">Actualizar</button>
+            </div>
+            <div id="displayArea" class="message-display">
+                Tu mensaje aparecerá aqui...
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made by <a href="https://github.com/Joseto0209" target="_blank">José Tomás Arévalo</a> · 2025</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
